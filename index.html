@@ -27,15 +27,29 @@
             </select>
         </fieldset>
         <fieldset class="mb-6">
-            <label for="rating" class="block mb-2 font-medium">Rating</label>
-            <select id="rating" name="rating" required class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
-                <option value="">Select your rating</option>
-                <option value="1">1 - Poor</option>
-                <option value="2">2 - Fair</option>
-                <option value="3">3 - Good</option>
-                <option value="4">4 - Very Good</option>
-                <option value="5">5 - Excellent</option>
-            </select>
+            <legend class="block mb-3 font-medium">Rating</legend>
+            <section class="flex gap-4">
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="rating" value="1" required class="mr-2 w-4 h-4 text-purple-600">
+                    <span class="text-sm font-medium">1</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="rating" value="2" required class="mr-2 w-4 h-4 text-purple-600">
+                    <span class="text-sm font-medium">2</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="rating" value="3" required class="mr-2 w-4 h-4 text-purple-600">
+                    <span class="text-sm font-medium">3</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="rating" value="4" required class="mr-2 w-4 h-4 text-purple-600">
+                    <span class="text-sm font-medium">4</span>
+                </label>
+                <label class="flex items-center cursor-pointer">
+                    <input type="radio" name="rating" value="5" required class="mr-2 w-4 h-4 text-purple-600">
+                    <span class="text-sm font-medium">5</span>
+                </label>
+            </section>
         </fieldset>
         <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-200">Submit Feedback</button>
     </form>
