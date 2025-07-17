@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-400 to-purple-600 p-6">
+    <header class="mb-8 text-center">
+        <h1 class="text-3xl font-bold text-white">Student Feedback Collection System</h1>
+    </header>
+    <form class="max-w-lg mx-auto bg-white bg-opacity-50 rounded-lg shadow-lg p-8">
+        <legend class="text-xl font-semibold mb-4 text-purple-700">Feedback Form</legend>
+        <fieldset>
+            <label for="name" class="block mb-2 font-medium">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter your full name" name="name" required class="w-full mb-4 px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <label for="email" class="block mb-2 font-medium">Email:</label>
+            <input type="email" id="email" name="email" required class="w-full mb-4 px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
+            <label for="department" class="block mb-2 font-medium">Department:</label>
+            <select id="department" name="department" required class="w-full mb-4 px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
+                <option value="">Select your department</option>
+                <option value="ca">Computer Application</option>
+                <option value="cs">Computer Science</option>
+                <option value="ps">Psychology</option>
+                <option value="co">Commerce</option>
+            </select>
+        </fieldset>
+        <fieldset class="mb-6">
+            <label for="rating" class="block mb-2 font-medium">Rating</label>
+            <select id="rating" name="rating" required class="w-full px-3 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-purple-400">
+                <option value="">Select your rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+        </fieldset>
+        <button type="submit" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-200">Submit Feedback</button>
+    </form>
+</body>
+</html>
